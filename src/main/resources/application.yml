@@ -1,0 +1,14 @@
+server:
+  port: 8080
+spring:
+  profiles:
+    active: ${APP_ENV:development}
+  datasource:
+    url: ${DB_URL:jdbc:postgresql://localhost/commitments}
+    username: ${DB_USERNAME:postgres}
+    password: ${DB_PASSWORD:secret}
+  jpa:
+    open-in-view: false
+  flyway:
+    locations: classpath:/db/migration
+    clean-on-validation-error: true
