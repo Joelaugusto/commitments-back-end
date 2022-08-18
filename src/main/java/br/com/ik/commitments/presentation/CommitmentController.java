@@ -14,6 +14,7 @@ import static br.com.ik.commitments.mappers.CommitmentMapper.commitmentMapper;
 
 @RestController
 @RequestMapping(path = "/api/v1/commitments")
+@CrossOrigin
 public class CommitmentController{
 
     @Autowired
