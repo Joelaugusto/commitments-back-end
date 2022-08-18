@@ -1,8 +1,5 @@
 package br.com.ik.commitments.domain;
 
-
-import lombok.Getter;
-import lombok.Setter;
 import org.hibernate.annotations.CreationTimestamp;
 import org.hibernate.annotations.UpdateTimestamp;
 
@@ -11,8 +8,6 @@ import java.time.LocalDateTime;
 
 @Entity
 @Table(name = "commitments")
-@Getter
-@Setter
 public class Commitment {
 
     @Id

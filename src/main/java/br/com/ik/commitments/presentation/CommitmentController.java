@@ -2,7 +2,6 @@ package br.com.ik.commitments.presentation;
 import br.com.ik.commitments.domain.CommitmentRequest;
 import br.com.ik.commitments.domain.CommitmentResponse;
 import br.com.ik.commitments.service.CommitmentService;
-import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Pageable;
 import org.springframework.http.HttpStatus;
@@ -15,7 +14,6 @@ import static br.com.ik.commitments.mappers.CommitmentMapper.commitmentMapper;
 
 @RestController
 @RequestMapping(path = "/api/v1/commitments")
-@RequiredArgsConstructor
 public class CommitmentController{
 
     @Autowired
